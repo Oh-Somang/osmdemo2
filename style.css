@@ -21,20 +21,6 @@ ul {
   padding: 0 30px;
 }
 
-.navbar {
-  background-color: black;
-  color: white;
-  height: 60px;
-}
-
-.navbar .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
 .main {
   color: black;
   line-height: 2.5;
@@ -81,14 +67,14 @@ ul {
 }
 
 button {
-  padding: 3px 5px;
-  margin: 3px 5px;
-  font-size: small;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  font-size: large;
   font-weight: bold;
-  background-color: lightgrey;
+  background-color: lightgray;
 }
 
 button:hover {
-  color: black;
-  background-color: yellow;
+  color: white;
+  background-color: aqua;
 }
