@@ -5,7 +5,7 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
   color: #333;
   background-color: linen;
@@ -36,7 +36,7 @@ ul {
 }
 
 .main {
-  color: blue;
+  color: black;
   line-height: 2.5;
 }
 
@@ -81,16 +81,14 @@ ul {
 }
 
 button {
-  padding: 5px 10px;
-  margin: 5px 10px;
-  font-size: large;
+  padding: 3px 5px;
+  margin: 3px 5px;
+  font-size: small;
   font-weight: bold;
   background-color: lightgrey;
-  /* border-radius: 10px;
-  border-width: 0px; */
 }
 
 button:hover {
-  color: red;
+  color: black;
   background-color: yellow;
 }
