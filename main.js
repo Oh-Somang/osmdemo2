@@ -8,8 +8,8 @@ function lightblue() {
   document.body.style.backgroundColor = 'lightblue'
 }
 
-function yellow() {
-  document.body.style.backgroundColor = 'yellow'
+function lavender() {
+  document.body.style.backgroundColor = 'lavender'
 }
 
 function linen() {
