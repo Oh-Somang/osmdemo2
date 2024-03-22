@@ -87,11 +87,11 @@ table {
 
 td,
 th {
-  border: 1px solid #dddddd;
+  border: 1px solid lightslategray;
   text-align: bottom;
   padding: 5px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: rgba(150, 212, 212, 0.4);
 }
