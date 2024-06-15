@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OhsList</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="bi bi-book-half text-primary"></i> Ohs<span class="text-primary">List</span>
+      </h1>
+
+      <ul class="nav nav-tabs mt-4" id="listTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="book-list-tab" data-bs-toggle="tab" data-bs-target="#book-list-pane" type="button" role="tab" aria-controls="book-list-pane" aria-selected="true">Book</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="music-list-tab" data-bs-toggle="tab" data-bs-target="#music-list-pane" type="button" role="tab" aria-controls="music-list-pane" aria-selected="false">Music</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="drama-list-tab" data-bs-toggle="tab" data-bs-target="#drama-list-pane" type="button" role="tab" aria-controls="drama-list-pane" aria-selected="false">Drama</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="listTabsContent">
+        <div class="tab-pane fade show active" id="book-list-pane" role="tabpanel" aria-labelledby="book-list-tab">
+          <form id="book-form">
+            <div class="form-group">
+              <label for="book-title">Title</label>
+              <input type="text" id="book-title" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="book-author">Author</label>
+              <input type="text" id="book-author" class="form-control" />
+            </div>
+            <div class="d-grid gap-2 mt-4">
+              <input type="submit" value="Add Book" class="btn btn-primary" />
+            </div>
+          </form>
+          <table class="table table-striped mt-4">
+            <thead class="table-dark">
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+          </table>
+        </div>
+        <div class="tab-pane fade" id="music-list-pane" role="tabpanel" aria-labelledby="music-list-tab">
+          <form id="music-form">
+            <div class="form-group">
+              <label for="music-title">Music Name</label>
+              <input type="text" id="music-title" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="music-artist">Artist</label>
+              <input type="text" id="music-artist" class="form-control" />
+            </div>
+            <div class="d-grid gap-2 mt-4">
+              <input type="submit" value="Add Music" class="btn btn-primary" />
+            </div>
+          </form>
+          <table class="table table-striped mt-4">
+            <thead class="table-dark">
+              <tr>
+                <th>Music Name</th>
+                <th>Artist</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody id="music-list"></tbody>
+          </table>
+        </div>
+        <div class="tab-pane fade" id="drama-list-pane" role="tabpanel" aria-labelledby="drama-list-tab">
+          <form id="drama-form">
+            <div class="form-group">
+              <label for="drama-title">Drama Name</label>
+              <input type="text" id="drama-title" class="form-control" />
+            </div>
+            <div class="d-grid gap-2 mt-4">
+              <input type="submit" value="Add Drama" class="btn btn-primary" />
+            </div>
+          </form>
+          <table class="table table-striped mt-4">
+            <thead class="table-dark">
+              <tr>
+                <th>Drama Name</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody id="drama-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
